@@ -121,6 +121,7 @@ class GraphFactory:
     # -- callable interface
     def __init__(self, graph_type: str, **kwargs):
         self.generator = self.create(graph_type, **kwargs)
+        print(f"[GraphFactory] created graph of type: {graph_type} with params: {kwargs}")
 
     def __call__(self):
         return self.generator()

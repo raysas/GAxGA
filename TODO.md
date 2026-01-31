@@ -1,0 +1,6 @@
+- [x] Graph generation: random graphs with a guaranteed "hidden" path to verify success   
+- [x] HamiltonianGA: class that plugs into GridSearchCV for auto-tuning on different parameters
+- [x] permutation encoding with Ordered Crossover (OX) and Swap Mutation to visit every vertex exactly once
+- [ ] Viability logic: Compare "Hard Constraints" (viability) vs. "Soft" (fitness penalty for invalid edges), explore different fitness functions
+- [x] Performance benchmarking: plot max/mean fitness and diversity to analyze convergence
+- [ ] Visualization of GA operations and best paths accross generations (animated dynamic graph viz)

@@ -14,6 +14,22 @@ def soft_penalty(genome, adj_matrix, penalty_weight=10):
             
     return unique_nodes - (invalid_edges * penalty_weight)
 
+# def soft_penalty(genome, adj_matrix, penalty_weight=10):
+#     '''
+#     fitness = (number of valid edges) - (penalty_weight * number of missing edges)
+#     '''
+#     valid_edges = 0
+#     invalid_edges = 0
+
+#     for i in range(len(genome) - 1):
+#         if adj_matrix[genome[i], genome[i+1]] == 1:
+#             valid_edges += 1
+#         else:
+#             invalid_edges += 1
+
+#     return valid_edges - penalty_weight * invalid_edges
+
+
 
 def hard_viability(genome, adj_matrix, **kwargs):
     """
