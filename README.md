@@ -80,7 +80,7 @@ This fitness reaches its maximum value \( |V| - 1 \) if and only if the individu
 
 Selection among individuals is performed using **tournament selection**, which offers a good balance between selection pressure and population diversity. At each selection step, a subset of individuals is randomly sampled from the population, and the individual with the highest fitness is chosen as a parent. This method avoids premature convergence while still favoring fitter solutions.
 
-> [!IMP]
+> [!IMPORTANT]
 > As discussed in class, it would be of interest to soften the viability constraint by introducing a penalty in the fitness function for invalid edges, this would allow the GA to explore a larger search space and potentially escape local optima. Thus we will be considering 2 fitness functions:
 > - **Hard Constraints**: only viable individuals are considered, non-viable individuals are discarded
 > - **Soft Constraints**: all individuals are considered, but a penalty is applied to the fitness score for each invalid edge in the path. For example, if an individual has \( k \) invalid edges, its fitness could be defined as:
